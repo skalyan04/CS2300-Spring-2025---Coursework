@@ -1,0 +1,34 @@
+Import needed libraries:
+   - Import NumPy for numerical operations
+   - Import SymPy for symbolic mathematics
+
+Variables for system of linear equations:
+   - x1, x2, x3, x4, x5, x6
+
+Define the system of equations:
+   Equation 1: x1 - x2 = 100
+   2: x2 - x3 = -50
+   3: x3 - x4 = 120
+   4: x4 - x5 = 150
+   5: x5 - x6 = 80
+
+Matrix A w/ system of linear equations:
+   A = with linear equations
+
+Vector B w/ constants:
+   B = other side of equations
+
+Make the augemented matrix
+
+RREF w/ augmented matrix - print it to console too:
+   rref_matrix = Row-Reduced form of augmented matrix
+   pivots = Pivot positions in the RREF
+
+Solve equations system (w/ SymPy):
+   solution = Solve the equations for x1, x2, x3, x4, x5, x6 ( <-- print this out too )
+
+Do x6 for x5 = 1000:
+    x6_value = 1000 - 80
+
+Sub. specific x6 value into the general solution:
+  specific solution = Replace x6 with the specific value in the general solution

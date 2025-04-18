@@ -1,0 +1,34 @@
+function to read matrices from the given input file:
+    open file for reading
+    read all lines
+    remove any extra blank lines or spaces from each line
+
+    create empty list D for first 3x3 matrix
+    for first 3 lines in file:
+        split line into numbers
+        convert each number to decimal
+        add number lisr as a row to matrix D
+    create empty list E for second 3x1 matrix
+    for next 3 lines in file:
+        convert line into one decimal number
+        add decimal number as a row to matrix E
+    return matrix D and matrix E
+
+function to compute the output matrix (D, E):
+    create 3x3 identity matrix I
+    try:
+        subtract matrix D from matrix I
+        find inverse of result
+        multiply inverse matrix by matrix E
+        round each value in result to one decimal place
+        return the final result matrix X
+    If inverse CANNOT be calculated:
+        print message: matrix can't be inverted
+        return nothing
+
+main function:
+    set filename as per name
+    call function to read matrices D and E from file
+    call function to calculate matrix X using D and E
+    if function returns valid matrix:
+        print output message and matrix X
